@@ -9,7 +9,7 @@ yangdaorong!
 
 xiongfusong!
 
-<<<<<<< HEAD
+
 本地版本比较旧
 =======
 1
@@ -40,4 +40,3 @@ echo "hello";
 
 1.这边试这样的？
 2.--by dooy svn  2015/11/18
->>>>>>> FETCH_HEAD
