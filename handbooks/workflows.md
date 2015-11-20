@@ -2,11 +2,10 @@
 批改网的API使用OAuth2进行用户授权。
 
 ##授权接口
-+ [请求用户授权](#API:请求用户授权)
-+ [获取token](#API:获取token)
-+ [getconf](#getconf)
++ [API:请求用户授权](#请求用户授权)
++ [API:获取token](#获取token)
 
-###API:请求用户授权
+###请求用户授权
 
 >http://api.pigai.org/oauth2/authorize
 
@@ -19,7 +18,7 @@
 | state | 可选,服务器会把state值原样传回客户端,用于防止csrf攻击 |
 | redirect_uri | 可选,用户授权完成后的回调地址，应用需要通过此回调地址获得用户的授权结果。|
 
-###API:获取token
+###获取token
 
 >http://api.pigai.org/oauth2/access_token
 
@@ -32,5 +31,3 @@
 | grant_type | 必须，值为`authorization_code` |
 | code | 必须，上一步获取的`code` |
 | redirect_uri | 必须,需要和创建应用时填写的回调地址相同 |
-
-###getconf
