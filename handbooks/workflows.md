@@ -12,7 +12,7 @@
 ######请求方式: GET
 ######请求参数
 |参数名称 | 参数说明 |
-:---:|:---:|
+|---|---|
 | client_id | 必须,应用的唯一标识，对应于 APIKey |
 | response_type | 必须,必须为code或者token其中一个。 |
 | state | 可选,服务器会把state值原样传回客户端,用于防止csrf攻击 |
@@ -25,7 +25,7 @@
 ######请求方式: POST
 ######请求参数
 |参数名称 | 参数说明 |
-:---:|:---:|
+|---|---|
 | client_id | 必须,创建应用时分配的App key |
 | client_secret | 必须,创建应用时分配的App secret |
 | grant_type | 必须，值为`authorization_code` |
