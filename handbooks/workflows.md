@@ -4,6 +4,7 @@
 ##授权接口
 + [请求用户授权](#API:请求用户授权)
 + [获取token](#API:获取token)
++ [getconf](#getconf)
 
 ###API:请求用户授权
 
@@ -31,3 +32,5 @@
 | grant_type | 必须，值为`authorization_code` |
 | code | 必须，上一步获取的`code` |
 | redirect_uri | 必须,需要和创建应用时填写的回调地址相同 |
+
+###getconf
