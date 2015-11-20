@@ -16,7 +16,7 @@ error_code: 错误的内部编号
 error_description: 错误的描述信息  
 error_url: 可读的网页URI，带有关于错误的信息，用于为终端用户提供与错误有关的额外信息。
 
-错误信息的返回方式有两种：
+######错误信息的返回方式有两种：
 1. 当请求授权Endpoint：http://api.pigai.org/oauth2/authorize 时出现错误，返回方式是：跳转到redirect_uri，并在uri的query parameter中附带错误的描述信息。
 2. 当请求access token endpoint: http://api.pigai.org/oauth2/access_token 时出现错误，返回方式：返回JSON文本。例如：
 ```json
@@ -27,9 +27,10 @@ error_url: 可读的网页URI，带有关于错误的信息，用于为终端用
 }
 ```
 ######OAuth2.0错误响应中的错误码定义如下表所示：
-|错误码(error) | 错误编号(error_code) | 错误描述(error_description) |
+
+| 错误码(error) | 错误编号(error_code) | 错误描述(error_description) |
 | --- | --- | --- |
-|redirect_uri_mismatch | 21322 | 重定向地址不匹配 |
-|invalid_request | 21323 | 请求不合法 |
-|unsupported_grant_type | 21328 | 不支持的 GrantType |
-|unsupported_response_type | 21329 | 不支持的 ResponseType |
+| redirect_uri_mismatch | 21322 | 重定向地址不匹配 |
+| invalid_request | 21323 | 请求不合法 |
+| unsupported_grant_type | 21328 | 不支持的 GrantType |
+| unsupported_response_type | 21329 | 不支持的 ResponseType |
