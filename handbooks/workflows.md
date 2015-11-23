@@ -23,7 +23,7 @@
 >http://api.pigai.org/oauth2/access_token
 
 ######请求方式: POST
-######请求参数
+#####请求参数
 |参数名称 | 参数说明 |
 |---|---|
 | client_id | 必须,创建应用时分配的App key |
@@ -31,3 +31,23 @@
 | grant_type | 必须，值为`authorization_code` |
 | code | 必须，上一步获取的`code` |
 | redirect_uri | 必须,需要和创建应用时填写的回调地址相同 |
+
+#####token的返回格式
+######成功
+```json
+{
+    "access_token":"Your_Access_Token",
+    "expires_in":"7200",
+    "token_type":"Bearer",
+    "state":"xyz"
+}
+```
+
+######失败
+```json
+{
+    "error": "原因",
+    "error_code": 21329,
+    "error_description": "原因描述"
+}
+```
