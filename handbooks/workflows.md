@@ -16,7 +16,7 @@
 | client_id | 必须,应用的唯一标识，对应于 APIKey |
 | response_type | 必须,必须为code或者token其中一个。 |
 | state | 可选,服务器会把state值原样传回客户端,用于防止csrf攻击 |
-| redirect_uri | 可选,用户授权完成后的回调地址，应用需要通过此回调地址获得用户的授权结果。|
+| redirect_uri | 可选,用户授权完成后的回调地址，应用需要通过此回调地址获得用户的授权结果，例如 http://your.deamoname.com/pigai.php 。|
 
 ###获取token
 
@@ -30,4 +30,4 @@
 | client_secret | 必须,创建应用时分配的App secret |
 | grant_type | 必须，值为`authorization_code` |
 | code | 必须，上一步获取的`code` |
-| redirect_uri | 必须,需要和创建应用时填写的回调地址相同 |
+| redirect_uri | 必须,需要和创建应用时填写的回调地址相同 ，例如 http://your.deamoname.com/pigai_token.php  |
