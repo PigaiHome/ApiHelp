@@ -9,5 +9,6 @@
    * [API规范](handbooks/api_specs.md)
    * [授权流程](handbooks/workflows.md)
    * [JSDK授权流程](handbooks/implicit.md)
+   * [PHP授权流程](handbooks/client_credentials.md)
    * [资源列表](handbooks/resource.md)
 
