@@ -4,6 +4,12 @@ jsdk是通过jsonP方式实现跨越获取token、资源，总带来说需要下
 + [JSDK：获取token](#JSDK获取token)
 + [JSDK：获取资源](#JSDK获取资源)
 
+
+######JSDK完整Demo
+在看下面步骤前可以先试一试我的demo
+>http://pigai.org/g2016.html
+
+
 ##JSDK获取token
 
   请参考  [2.2 授权流程 中的 API:请求用户授权](../handbooks/workflows.html) ，这边的不需要认证，而直接通过 client_id 获取token
@@ -185,4 +191,21 @@ $.ajax({
 ```
 
 ######tpl为'html_json'返回格式
+
+```json
+{
+    "error": "success",
+    "error_code": 0,
+    "error_description": "success",
+    "data": {
+        "score": 68,
+        "score_cat": " ....",
+        "sentences": "..."
+    }
+}
+```
+
+
+
+
 
