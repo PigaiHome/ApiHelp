@@ -1,8 +1,8 @@
 # PHP授权流程
 适用于通过server-side获取token的场景,分为两步:
 
-* [获取token](#获取token);
-* [获取资源](#获取资源);
+* [获取token](#获取token)
+* [获取资源](#获取资源)
 
 ##phpsdk说明
 #####下载地址
