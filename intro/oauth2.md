@@ -24,6 +24,7 @@ http://api.pigai.org/oauth2/authorize?response_type=token&client_id=Your_Client_
     "error": "unsupported_response_type",
     "error_code": 21329,
     "error_description": "不支持的ResponseType."
+    "data": {}
 }
 ```
 
