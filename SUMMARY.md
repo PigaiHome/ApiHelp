@@ -8,4 +8,5 @@
 + [批改网API手册](handbooks/README.md)
     - [API规范](handbooks/api_specs.md)
     - [授权流程](handbooks/workflows.md)
+    - [implicit授权流程](handbooks/implicit.md)
     - [资源列表](handbooks/resource.md)
