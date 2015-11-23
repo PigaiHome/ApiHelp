@@ -1,6 +1,6 @@
 # 批改网开放接口 JSDK
 
-批改网JSDK提供JavaScript的接口，可轻松部署批改网作文批改网到网页中
+批改网JSDK提供JavaScript的接口，可轻松将批改作文结果部署到网页中
 
 jsdk是通过jquery 的jsonP方式实现跨越获取token、资源，总体来说需要下面2个步骤：
 
