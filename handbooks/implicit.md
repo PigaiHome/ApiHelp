@@ -1,8 +1,11 @@
-# 批改网开放接口 JSDK授权流程
+# 批改网开放接口 JSDK
 
-jsdk是通过jsonP方式实现跨越获取token、资源，总带来说需要下面2个步骤：
-+ [JSDK：获取token](#JSDK获取token)
-* [获取资源](#获取资源)
+批改网JSDK提供JavaScript的接口，可轻松部署批改网作文批改网到网页中
+
+jsdk是通过jquery 的jsonP方式实现跨越获取token、资源，总体来说需要下面2个步骤：
+
++ [JSDK：获取授权](#获取授权)
++ [JSDK：获取资源](#获取资源)
 
 
 ######JSDK完整Demo
@@ -10,9 +13,9 @@ jsdk是通过jsonP方式实现跨越获取token、资源，总带来说需要下
 >http://pigai.org/g2016.html
 
 
-##JSDK获取token
+##获取授权
 
-  请参考  [2.2 授权流程 中的 API:请求用户授权](../handbooks/workflows.html) ，这边的不需要认证，而直接通过 client_id 获取token
+  请参考  [授权流程](../handbooks/workflows.html) ，这边免去“请求用户授权”，而直接通过 client_id（APIKEY） 获取token
 
 >http://api.pigai.org/oauth2/authorize2
 
@@ -20,7 +23,7 @@ jsdk是通过jsonP方式实现跨越获取token、资源，总带来说需要下
 #####请求参数
 |参数名称 | 参数说明 |
 |---|---|
-| client_id | 必须,应用的唯一标识，对应于 APIKey |
+| client_id | 必须,应用的唯一标识，对应的 APIKey |
 | response_type | 必须，必须为token。 |
 | callback | 必须，自定义JavaScript函数，建议使用jsonP来做。|
 | state | 可选，服务器会把state值原样传回客户端,用于防止csrf攻击 |

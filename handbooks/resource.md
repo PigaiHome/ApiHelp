@@ -1,16 +1,15 @@
-# 资源列表
+# 批改网API资源
 ###作文
-1.
-快速体验: `http://api.pigai.org/essays/rapid_experience`
+1.批改网分析结果: `http://api.pigai.org/essays/rapid_experience`
 
 ######请求参数(post)
 
 | 参数名称 | 参数说明 |
-| :--: | :--: |
-| title | 作文标题 |
-| comcontext | 作文内容 |
-| api | 统计ID |
-| tpl | 输出格式，固定值all_json |
+|---|---|
+| access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
+| title | 必须，作文标题 |
+| comcontext | 必须，作文内容 |
+| tpl | 必须，固定值all_json |
 
 ###返回结果
 ######成功
@@ -28,5 +27,75 @@
     "error": "原因",
     "error_code": 21329,
     "error_description": "原因描述"
+}
+```
+
+######tpl为all_json的返回详细格式
+
+```json
+{
+    "error": "success",
+    "error_code": 0,
+    "error_description": "success",
+    "data": {
+        "score": 40.5,
+        "score_cat": {
+            "1": {
+                "name": "词汇",
+                "tip": "",
+                "score": 0.442630385488
+            },
+            "2": {
+                "name": "句子",
+                "tip": "",
+                "score": 0.477608817276
+            },
+            "3": {
+                "name": "篇章结构",
+                "tip": "",
+                "score": 0.413793103448
+            },
+            "4": {
+                "name": "内容相关",
+                "tip": "",
+                "score": 0.3
+            }
+        },
+        "comment": "采用了简单的衔接手法，行文流畅；多多加强句法知识；文章用词太过单一，且单词拼写错误较多。",
+        "sentences": [
+            {
+                "sid": 0,
+                "pid": 1,
+                "text": "English is a internationaly language which becomes importantly for modern world.",
+                "comment": [
+                    {
+                        "class": "error",
+                        "cat": "拼写错误",
+                        "msg": "<b>internationaly</b> 疑似拼写错误"
+                    },
+                    {
+                        "class": "error",
+                        "cat": "冠词错误",
+                        "msg": "请检查<b>a internationaly</b>，疑似冠词错误。"
+                    },
+                    {
+                        "class": "error",
+                        "cat": "词语错误",
+                        "msg": "词性错误，建议将<b>becomes importantly</b>改为<b>becomes important</b>。"
+                    },
+                    {
+                        "class": "error",
+                        "cat": "介词错误",
+                        "msg": "介词误用，建议将<b>for modern world</b>改为<b>in modern world</b>。"
+                    },
+                    {
+                        "class": "warn",
+                        "cat": "其他",
+                        "msg": "<b>for modern world</b>疑似冠词缺失或<a target='_blank' href='http://wiki.pigai.org/index.php?doc-view-2'>可数名词单用</a>。"
+                    }
+                ]
+            }
+        ]
+    }
 }
 ```
