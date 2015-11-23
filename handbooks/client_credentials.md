@@ -50,5 +50,12 @@ $config = array(
 ##获取资源
 ######请求方式: POST
 
-#####方法: 请参考[JSDK授权流程](../handbooks/resource.html)
+#####方法:
+
+1. 参考 [API资源](../handbooks/resource.html)
+2. 参考 [JSDK授权流程的获取资源](./implicit.html#获取资源)
+
+
+
+
 
