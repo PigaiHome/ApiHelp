@@ -2,7 +2,7 @@
 
 jsdk是通过jsonP方式实现跨越获取token、资源，总带来说需要下面2个步骤：
 + [JSDK：获取token](#JSDK获取token)
-+ [JSDK：获取资源](#JSDK获取资源)
+* [获取资源](#获取资源)
 
 
 ######JSDK完整Demo
@@ -84,7 +84,7 @@ $.ajax({
 	});
 ```
 
-##JSDK获取资源
+##获取资源
 
 >http://api.pigai.org/essays/rapid_experience
 

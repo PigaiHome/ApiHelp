@@ -50,5 +50,5 @@ $config = array(
 ##获取资源
 ######请求方式: GET
 
-#####方法: 请参考[JSDK授权流程](./implicit.html#JSDK获取资源)
+#####方法: 请参考[JSDK授权流程](./implicit.html#获取资源)
 
