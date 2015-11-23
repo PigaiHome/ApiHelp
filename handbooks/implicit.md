@@ -2,7 +2,7 @@
 
 批改网JSDK提供JavaScript的接口，可轻松将批改作文结果部署到网页中
 
-jsdk是通过jquery 的jsonP方式实现跨越获取token、资源，总体来说需要下面2个步骤：
+jsdk是通过jquery的jsonP方式实现跨越获取授权、资源，总体来说需要下面2个步骤：
 
 + [JSDK：获取授权](#获取授权)
 + [JSDK：获取资源](#获取资源)
