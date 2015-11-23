@@ -18,6 +18,16 @@
 | state | 可选,服务器会把state值原样传回客户端,用于防止csrf攻击 |
 | redirect_uri | 可选,用户授权完成后的回调地址，应用需要通过此回调地址获得用户的授权结果，例如 http://your.deamoname.com/pigai.php 。|
 
+######返回说明
+```json
+{'请福松或者李刚补充下'}
+```
+|变量名称 | 变量说明 |
+|---|---|
+| client_id | 必须,应用的唯一标识，对应于 APIKey |
+
+
+
 ###获取token
 
 >http://api.pigai.org/oauth2/access_token
@@ -31,3 +41,13 @@
 | grant_type | 必须，值为`authorization_code` |
 | code | 必须，上一步获取的`code` |
 | redirect_uri | 必须,需要和创建应用时填写的回调地址相同 ，例如 http://your.deamoname.com/pigai_token.php  |
+
+######返回说明
+```json
+{'请福松或者李刚补充下'}
+```
+|变量名称 | 变量说明 |
+|---|---|
+| client_id | 必须,应用的唯一标识，对应于 APIKey |
+
+
