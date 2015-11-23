@@ -1,4 +1,4 @@
-# JSDK授权流程
+# 批改网开放接口 JSDK授权流程
 
 jsdk是通过jsonP方式实现跨越获取token、资源，总带来说需要下面2个步骤：
 + [JSDK：获取token](#JSDK获取token)
@@ -6,7 +6,7 @@ jsdk是通过jsonP方式实现跨越获取token、资源，总带来说需要下
 
 
 ######JSDK完整Demo
-在看下面步骤前可以先试一试我的demo
+在看下面步骤前可以先试一试我们的demo
 >http://pigai.org/g2016.html
 
 
