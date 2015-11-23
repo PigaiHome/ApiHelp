@@ -48,7 +48,7 @@ $config = array(
 返回值为token字符串,如: `8d734bf19bc9e7b0dbec5642204e7988a05cc222`
 
 ##获取资源
-######请求方式: GET
+######请求方式: POST
 
-#####方法: 请参考[JSDK授权流程](./implicit.html#获取资源)
+#####方法: 请参考[JSDK授权流程](../handbooks/resource.html)
 

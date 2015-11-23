@@ -1,4 +1,4 @@
-# 批改网API资源
+# 批改作文API资源
 ###作文
 1.批改网分析结果: `http://api.pigai.org/essays/rapid_experience`
 
