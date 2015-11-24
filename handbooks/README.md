@@ -48,4 +48,3 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | 20000 | 请求参数access_token不存在 |
 | 20001 | unkown_error,未知错误 |
 | 20003 | resource_error，资源获取失败 |
-
