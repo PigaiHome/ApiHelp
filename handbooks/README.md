@@ -44,7 +44,7 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | 错误编号 | 错误码 | 错误描述 |
 | --- | --- | --- |
 | 0 | success | 成功信息 |
-| 10002 | insufficient_scope | 超出作用范围 |
+| 10002 | insufficient_scope | 需要更高权限的token |
 | 10003 | invalid_token | 提供的token无效 |
 | 20002 | incorrect_response_parameter | 不正确的响应参数 |
 | 20003 | get_resource_failed | 获取资源失败 |
