@@ -46,7 +46,7 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | 0 | 成功信息 |
 | 1 | 错误   |
 | 20000 | 请求参数access_token不存在 |
-| 20001 | unkown error,未知错误 |
-| 21323 | 请求不合法 |
+| 20001 | unkown_error,未知错误 |
+| 20003 | resource_error，资源获取失败 |
 | 21328 | 不支持的 GrantType |
 | 21329 | 不支持的 ResponseType |
