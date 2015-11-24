@@ -17,7 +17,7 @@
 | access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
 | title | 必须，作文标题 |
 | comcontext | 必须，作文内容 |
-| scope | 必须，固定值all_json |
+| scope | 资源访问控制，可为json,html_json,all_json，默认为all_json |
 
 ###返回结果
 ######成功
