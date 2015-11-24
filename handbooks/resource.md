@@ -19,6 +19,9 @@
 | comcontext | 必须，作文内容 |
 | scope | 资源访问控制，可为json,html_json,all_json，默认为all_json |
 
+###资源scope
+根据`appkey`的作用范围，开发者每次通过认证获取的access_token都有一个作用域`scope`,决定了该token能否从批改网的api获取正确的返回值。
+
 ###返回结果
 ######成功
 ```json
