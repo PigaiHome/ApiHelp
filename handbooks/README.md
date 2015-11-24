@@ -41,10 +41,10 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | data |  请求返回的数据，一般为json格式 |
 
 ####error_code 参考错误代码
-| 代码 | 说明 |
-| --- | --- |
-| 0 | 成功信息 |
-| 1 | 错误   |
-| 20000 | 请求参数access_token不存在 |
-| 20001 | unkown_error,未知错误 |
-| 20003 | resource_error，资源获取失败 |
+| 错误编号 | 错误码 | 错误描述 |
+| --- | --- | --- |
+| 0 | success | 成功信息 |
+| 10002 | insufficient_scope | 超出作用范围 |
+| 10003 | invalid_token | 提供的token无效 |
+| 20002 | incorrect_response_parameter | 不正确的响应参数 |
+| 20003 | get_resource_failed | 获取资源失败 |
