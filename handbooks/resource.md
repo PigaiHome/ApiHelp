@@ -2,14 +2,22 @@
 ###作文
 1.批改网分析结果: `http://api.pigai.org/essays/rapid_experience`
 
-######请求参数(post)
+
+######请求参数(POST/GET)
+
+######GET方式
+> curl 'http://api.pigai.org/essays/rapid_experience?title=english&comcontext=english&scope=all_json&access_token=Your_Access_Token'
+
+######POST方式
+> curl http://api.pigai.org/essays/rapid_experience -d 'title=english&comcontext=english&scope=all_json&access_token=Your_Access_Token'
+
 
 | 参数名称 | 参数说明 |
 |---|---|
 | access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
 | title | 必须，作文标题 |
 | comcontext | 必须，作文内容 |
-| tpl | 必须，固定值all_json |
+| scope | 必须，固定值all_json |
 
 ###返回结果
 ######成功
