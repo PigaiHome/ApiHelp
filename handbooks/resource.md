@@ -38,7 +38,7 @@
 }
 ```
 
-######tpl为all_json的返回详细格式
+######scope为all_json的返回详细格式
 
 ```json
 {
