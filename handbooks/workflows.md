@@ -37,6 +37,7 @@ $ curl http://api.pigai.org/oauth2/access_token \
 |---|---|
 | access_token | 临时token |
 | expires_in | 过期时间限制，默认为2个小时。 |
+| token_type | token 模式 Bearer  |
 | state | 带过来的state 防止crsf攻击 |
 ######失败
 ```json

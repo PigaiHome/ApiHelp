@@ -94,12 +94,12 @@ $.ajax({
 ######请求方式: GET,jsonP
 #####请求参数
 | 参数名称 | 参数说明 |
-| :--: | :--: |
+| --- | --- |
 | access_token | 第一个步骤获取的token |
 | title | 作文标题 |
 | comcontext | 作文内容 |
-| tpl | 输出格式，固定值all_json、html_json |
-| callback | 必须，自定义JavaScript函数，建议使用jsonP。|
+| scope | 这里只能使用 html_json |
+| callback | 必须，自定义JavaScript函数名称，建议使用jsonP。|
 
 #####返回参数说明
 
@@ -114,13 +114,28 @@ $.ajax({
 		access_token: 'token',
 		title: 'title',
 		comcontext: 'English is a internationaly language which becomes importantly for modern world. ',
-		tpl: 'all_json' // 或者可用 html_json
+		scope: 'html_json' // 或者可用 html_json
 	   },
 		   dataType: 'jsonp'
 		}).done(function(rep) {
 
 		});
 
+```
+
+######tpl为'html_json'返回格式
+
+```json
+{
+    "error": "success",
+    "error_code": 0,
+    "error_description": "success",
+    "data": {
+        "score": 68,
+        "score_cat": " ....",
+        "sentences": "..."
+    }
+}
 ```
 
 ######tpl为'all_json'的
@@ -189,21 +204,6 @@ $.ajax({
                 ]
             }
         ]
-    }
-}
-```
-
-######tpl为'html_json'返回格式
-
-```json
-{
-    "error": "success",
-    "error_code": 0,
-    "error_description": "success",
-    "data": {
-        "score": 68,
-        "score_cat": " ....",
-        "sentences": "..."
     }
 }
 ```
