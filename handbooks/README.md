@@ -46,5 +46,7 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | 0 | success | 成功信息 |
 | 10002 | insufficient_scope | 需要更高权限的token |
 | 10003 | invalid_token | 提供的token无效 |
+| 10004 | invalid_client | appkey无效 |
+| 10005 | invalid_request | 请求参数无效 |
 | 20002 | incorrect_response_parameter | 不正确的响应参数 |
 | 20003 | get_resource_failed | 获取资源失败 |
