@@ -9,4 +9,6 @@
    * [API资源](handbooks/resource.md)
    * [PHP SDK](handbooks/client_credentials.md)
    * [批改网JSDK](handbooks/implicit.md)
+* [API资源](resources/README.md)
+   * [翻译资源](resources/translation.md)
 
