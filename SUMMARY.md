@@ -11,4 +11,5 @@
    * [批改网JSDK](handbooks/implicit.md)
 * [API资源](resources/README.md)
    * [翻译资源](resources/translation.md)
+* [定制开发](other/README.md)
 
