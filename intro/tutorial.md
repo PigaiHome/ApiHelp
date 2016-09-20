@@ -1,7 +1,7 @@
 
 ### 开发者流程
 
-*提示：正式接入批改网API前，请认真阅读“<a href="http://api.pigai.org/apibook/api.html">api使用协议</a>”，当您接入API后，表表示您同意协议所有内容。
+*提示：正式接入批改网API前，请认真阅读“<a href="http://api.pigai.org/apibook/api.html">api使用协议</a>”，当您接入API后，表表示您同意协议所有内容。*
 
 API的接入需要经过以下3步：
 
