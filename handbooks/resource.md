@@ -17,6 +17,7 @@
 | access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
 | title | 必须，作文标题 |
 | comcontext | 必须，作文内容 |
+| rid | 选填，默认为0, 用于跑题度检测 |
 | scope | 资源访问控制，可为json,html_json,all_json，默认为all_json |
 
 ###资源scope
@@ -106,7 +107,12 @@
                     }
                 ]
             }
-        ]
+        ],
+        "deviation": {
+            "status": "ok", # ok:检测成功, failure: 检测失败
+            "rid": "481981",
+            "degree": 0.9990287 # 跑题度(0~1之间, 值越大跑题度越大)
+        }
     }
 }
 ```
