@@ -50,34 +50,30 @@
     "error_code": 0,
     "error_description": "success",
     "data": {
-        "score": 40.5,
+        "score": 40.5, // 总得分
         "score_cat": {
             "1": {
                 "name": "词汇",
-                "tip": "",
                 "score": 0.442630385488
             },
             "2": {
                 "name": "句子",
-                "tip": "",
                 "score": 0.477608817276
             },
             "3": {
                 "name": "篇章结构",
-                "tip": "",
                 "score": 0.413793103448
             },
             "4": {
                 "name": "内容相关",
-                "tip": "",
                 "score": 0.3
             }
         },
         "comment": "采用了简单的衔接手法，行文流畅；多多加强句法知识；文章用词太过单一，且单词拼写错误较多。",
-        "sentences": [
+        "sentences": [ // 逐句分析
             {
-                "sid": 0,
-                "pid": 1,
+                "sid": 0, // 第几句
+                "para_id": 1, // 段落, 从1开始
                 "text": "English is a internationaly language which becomes importantly for modern world.",
                 "comment": [
                     {
@@ -109,9 +105,9 @@
             }
         ],
         "deviation": {
-            "status": "ok", # ok:检测成功, failure: 检测失败
-            "rid": "481981",
-            "degree": 0.9990287 # 跑题度(0~1之间, 值越大跑题度越大)
+            "status": "ok", // ok:检测成功, failure: 检测失败
+            "rid": "481981", // 作文号
+            "degree": 0.9990287 // 跑题度(0~1之间, 值越大跑题度越大)
         }
     }
 }
