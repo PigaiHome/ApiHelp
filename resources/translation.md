@@ -61,12 +61,12 @@
                 "comment": [
                     {
                         "class": "error",
-                        "category": "句子错误",
+                        "cat": "句子错误",
                         "msg": "本句语法不规范，请检查。",
                     },
                     {
                         "class": "error_trp",
-                        "category": "拓展辨析",
+                        "cat": "拓展辨析",
                         "msg": "<b>people</b>表示“人，民族”。查看与<a href=\"http://bbs.pigai.org/forum.php?mod=viewthread&tid=12942&page=1&extra=#pid30263\" target=\"_blank\"><b>person</b></a>的区别。",
                     }
                 ]
@@ -78,7 +78,7 @@
                 "comment": [
                     {
                         "class": "error_trp",
-                        "category": "学习提示",
+                        "cat": "学习提示",
                         "msg": "<b>nation</b>表示“国家”。注意与<b>country</b>的区别。<a href=\"http://bbs.pigai.org/forum.php?mod=viewthread&tid=12961&page=1&extra=#pid30320\" target=\"_blank\">详情点击</a>",
                     }
                 ]
@@ -90,12 +90,12 @@
                 "comment": [
                     {
                         "class": "error",
-                        "category": "大小写错误",
+                        "cat": "大小写错误",
                         "msg": "确认 <b>city-based</b> 大小写使用正确。",
                     },
                     {
                         "class": "error_trp",
-                        "category": "学习提示",
+                        "cat": "学习提示",
                         "msg": "易混词汇: <b>new</b>, fresh, novel, original, innovative 均含“新的”之意。",
                     }
                 ]
@@ -107,12 +107,12 @@
                 "comment": [
                     {
                         "class": "error",
-                        "category": "词语错误",
+                        "cat": "词语错误",
                         "msg": "请检查<b>importa</b>，确认拼写正确。",
                     },
                     {
                         "class": "error_trp",
-                        "category": "学习提示",
+                        "cat": "学习提示",
                         "msg": "易混词汇: <b>development</b>, evolution 都表示“发展，进化”之意。",
                     }
                 ]
@@ -124,7 +124,7 @@
                 "comment": [
                     {
                         "class": "error_trp",
-                        "category": "拓展辨析",
+                        "cat": "拓展辨析",
                         "msg": "动名搭配 <b>improve...standard</b> 在语料库中出现过 <a target=\"_blank\" href=\"corpus/snt/?q=improve standard/von\">193</a> 次",
                     }
                 ]
