@@ -7,7 +7,6 @@
 
 | 参数名称 | 参数说明 |
 |---|---|
-| rid | 必须，Integer，批改网作文号 |
 | snt | 必须(只支持post)，String，答案 |
 | referer | 选填(只支持post)，JSON串，参考答案, 格式如: '["referer1", 'referer2']'|
 | info_word | 选填(只支持post), JSON串，限定词, 格式如: '["word1", "word2"]' |
