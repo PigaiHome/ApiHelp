@@ -17,7 +17,7 @@
 | access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
 | title | 必须，作文标题 |
 | comcontext | 必须，作文内容 |
-| rid | 选填，默认为0, 用于跑题度检测 |
+| examples | 选填(只支持post)，范文, 用于跑题度检测. `json串`格式如: '["example1", "example2"]'|
 | scope | 资源访问控制，可为json,html_json,all_json，默认为all_json |
 
 ###资源scope
