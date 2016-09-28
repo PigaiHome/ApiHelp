@@ -7,8 +7,8 @@
 
 | 参数名称 | 参数说明 |
 |---|---|
-| snt | 必须(只支持post)，String，答案 |
-| referer | 选填(只支持post)，JSON串，参考译文(可以提高翻译准确度), 格式如: '["referer1", 'referer2']'|
+| comcontext | 必须(只支持post)，String，答案 |
+| solution | 必须(只支持post)，String，翻译的标准参考答案 |
 | info_word | 选填(只支持post), JSON串，限定词, 格式如: '["word1", "word2"]' |
 | access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
 | scope | 必须，资源访问控制，固定值:all_json |
