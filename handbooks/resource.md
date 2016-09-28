@@ -77,7 +77,7 @@
                 "text": "English is a internationaly language which becomes importantly for modern world.",
                 "comment": [
                     {
-                        "class": "error",
+                        "class": "error", # 分为四类: warn 警告，error 错误，error_trp 提示，great 好
                         "cat": "拼写错误",
                         "msg": "<b>internationaly</b> 疑似拼写错误"
                     },
