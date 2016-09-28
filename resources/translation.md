@@ -88,7 +88,7 @@
                 "text": "The urbanization rate of China registered over 50% last year, which marks that our country has stepped into a new “city-based society”.",
                 "comment": [
                     {
-                        "class": "error", # 分为四类: warn 警告，error 错误，error_trp 提示，great 好
+                        "class": "error", // 分为四类: warn 警告，error 错误，error_trp 提示，great 好
                         "cat": "大小写错误",
                         "msg": "确认 <b>city-based</b> 大小写使用正确。",
                     },
