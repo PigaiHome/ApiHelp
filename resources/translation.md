@@ -65,7 +65,7 @@
         "sentences": [ // 逐句分析
             {
                 "sid": 0, // 第几句
-                "para_id": 1, // 段落, 从1开始
+                "pid": 1, // 段落, 从1开始
                 "text": "Urbanization presents a process that rural people migrate into the cities.",
                 "comment": [
                     {
@@ -82,7 +82,7 @@
             },
             {
                 "sid": 1,
-                "para_id": 1,
+                "pid": 1,
                 "text": "A key index of a nation’s urbanization level is the distribution of its population in urban a nd rural areas.",
                 "comment": [
                     {
@@ -94,7 +94,7 @@
             },
             {
                 "sid": 2,
-                "para_id": 1,
+                "pid": 1,
                 "text": "The urbanization rate of China registered over 50% last year, which marks that our country has stepped into a new “city-based society”.",
                 "comment": [
                     {
@@ -111,7 +111,7 @@
             },
             {
                 "sid": 3,
-                "para_id": 1,
+                "pid": 1,
                 "text": "Urbanization becomes an importa nt part of our society and economic development.",
                 "comment": [
                     {
@@ -128,7 +128,7 @@
             },
             {
                 "sid": 4,
-                "para_id": 1,
+                "pid": 1,
                 "text": "By offering better education and job opportunities to urban citizens, it not only improves people’s living standards, but also it makes their culture colorful.",
                 "comment": [
                     {

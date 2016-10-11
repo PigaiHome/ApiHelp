@@ -74,7 +74,7 @@
         "sentences": [ // 逐句分析
             {
                 "sid": 0, // 第几句
-                "para_id": 1, // 段落, 从1开始
+                "pid": 1, // 段落, 从1开始
                 "text": "English is a internationaly language which becomes importantly for modern world.",
                 "comment": [
                     {
