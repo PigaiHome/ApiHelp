@@ -1,6 +1,6 @@
 # 批改作文API资源
 ###作文
-1.批改网分析结果: `http://api.pigai.org/essays/rapid_experience`
+分析结果: `http://api.pigai.org/essays/rapid_experience`
 
 
 ######请求参数(POST/GET)
