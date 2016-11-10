@@ -138,6 +138,10 @@
                 }
             ]
         }
-    ]
+    ],
+    "meta_data": { //自定义参数
+        "xxx": "xxxx"
+    },
+    "key": "PG2_emoapp_bb1f71d46d236eb3819a41c59eca920d"
 }
 ```
