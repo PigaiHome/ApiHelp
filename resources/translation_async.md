@@ -42,67 +42,102 @@
 
 ```json
 {
-    "score": 40.5, // 总得分
+    "score": 77.94199, // 总得分
     "score_cat": {
         "1": {
             "name": "词汇",
-            "score": 0.442630385488
+            "score": 0.8957009
         },
         "2": {
             "name": "句子",
-            "score": 0.477608817276
+            "score": 0.7107325
         },
         "3": {
             "name": "篇章结构",
-            "score": 0.413793103448
+            "score": 0.7091833
         },
         "4": {
             "name": "内容相关",
-            "score": 0.3
+            "score": 0.6562703
         }
     },
-    "comment": "采用了简单的衔接手法，行文流畅；多多加强句法知识；文章用词太过单一，且单词拼写错误较多。",
+    "comment": "文中词汇表达灵活多样请继续保持，高级词汇积累也做的很棒；从句数量偏少；全文结构较为严谨。", // 总评
     "sentences": [ // 逐句分析
         {
             "sid": 0, // 第几句
             "pid": 1, // 段落, 从1开始
-            "text": "English is a internationaly language which becomes importantly for modern world.",
+            "text": "Urbanization presents a process that rural people migrate into the cities.",
+            "comment": [
+                {
+                    "class": "error",
+                    "cat": "句子错误",
+                    "msg": "本句语法不规范，请检查。",
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "<b>people</b>表示“人，民族”。查看与<a href=\"http://bbs.pigai.org/forum.php?mod=viewthread&tid=12942&page=1&extra=#pid30263\" target=\"_blank\"><b>person</b></a>的区别。",
+                }
+            ]
+        },
+        {
+            "sid": 1,
+            "pid": 1,
+            "text": "A key index of a nation’s urbanization level is the distribution of its population in urban a nd rural areas.",
+            "comment": [
+                {
+                    "class": "error_trp",
+                    "cat": "学习提示",
+                    "msg": "<b>nation</b>表示“国家”。注意与<b>country</b>的区别。<a href=\"http://bbs.pigai.org/forum.php?mod=viewthread&tid=12961&page=1&extra=#pid30320\" target=\"_blank\">详情点击</a>",
+                }
+            ]
+        },
+        {
+            "sid": 2,
+            "pid": 1,
+            "text": "The urbanization rate of China registered over 50% last year, which marks that our country has stepped into a new “city-based society”.",
             "comment": [
                 {
                     "class": "error", // 分为四类: warn 警告，error 错误，error_trp 提示，great 好
-                    "cat": "拼写错误",
-                    "msg": "<b>internationaly</b> 疑似拼写错误"
+                    "cat": "大小写错误",
+                    "msg": "确认 <b>city-based</b> 大小写使用正确。",
                 },
                 {
-                    "class": "error",
-                    "cat": "冠词错误",
-                    "msg": "请检查<b>a internationaly</b>，疑似冠词错误。"
-                },
+                    "class": "error_trp",
+                    "cat": "学习提示",
+                    "msg": "易混词汇: <b>new</b>, fresh, novel, original, innovative 均含“新的”之意。",
+                }
+            ]
+        },
+        {
+            "sid": 3,
+            "pid": 1,
+            "text": "Urbanization becomes an importa nt part of our society and economic development.",
+            "comment": [
                 {
                     "class": "error",
                     "cat": "词语错误",
-                    "msg": "词性错误，建议将<b>becomes importantly</b>改为<b>becomes important</b>。"
+                    "msg": "请检查<b>importa</b>，确认拼写正确。",
                 },
                 {
-                    "class": "error",
-                    "cat": "介词错误",
-                    "msg": "介词误用，建议将<b>for modern world</b>改为<b>in modern world</b>。"
-                },
+                    "class": "error_trp",
+                    "cat": "学习提示",
+                    "msg": "易混词汇: <b>development</b>, evolution 都表示“发展，进化”之意。",
+                }
+            ]
+        },
+        {
+            "sid": 4,
+            "pid": 1,
+            "text": "By offering better education and job opportunities to urban citizens, it not only improves people’s living standards, but also it makes their culture colorful.",
+            "comment": [
                 {
-                    "class": "warn",
-                    "cat": "其他",
-                    "msg": "<b>for modern world</b>疑似冠词缺失或<a target='_blank' href='http://wiki.pigai.org/index.php?doc-view-2'>可数名词单用</a>。"
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "动名搭配 <b>improve...standard</b> 在语料库中出现过 <a target=\"_blank\" href=\"corpus/snt/?q=improve standard/von\">193</a> 次",
                 }
             ]
         }
-    ],
-    "deviation": {
-        "status": "ok", // ok:检测成功, failure: 检测失败
-        "degree": 0.9990287 // 跑题度(0~1之间, 值越大跑题度越大)
-    },
-    "meta_data": { //自定义参数
-        "xxx": "xxxx"
-    },
-    "key": "PG2_emoapp_bb1f71d46d236eb3819a41c59eca920d"
+    ]
 }
 ```
