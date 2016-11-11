@@ -43,7 +43,7 @@
     "error_code": 0,
     "error_description": "success",
     "data": {
-        "score": 77.94199, // 总得分
+        "score": 80, // 总得分(百分制)
         "score_cat": {
             "1": {
                 "name": "词汇",

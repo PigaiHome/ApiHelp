@@ -51,7 +51,7 @@
     "error_code": 0,
     "error_description": "success",
     "data": {
-        "score": 40.5, // 总得分
+        "score": 40.5, // 总得分(百分制)
         "score_cat": {
             "1": {
                 "name": "词汇",
@@ -107,7 +107,6 @@
         ],
         "deviation": {
             "status": "ok", // ok:检测成功, failure: 检测失败
-            "rid": "481981", // 作文号
             "degree": 0.9990287 // 跑题度(0~1之间, 值越大跑题度越大)
         }
     }
