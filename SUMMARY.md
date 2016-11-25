@@ -1,7 +1,7 @@
 # Summary
 
 * [简介](README.md)
-* [开发者流程](intro/tutorial.md)
+* [接入API必读](intro/tutorial.md)
 * [API使用协议](api.md)
 * [了解OAuth2.0](intro/oauth2.md)
 * [批改网API手册](handbooks/README.md)
