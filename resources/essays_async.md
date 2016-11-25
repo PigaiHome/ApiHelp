@@ -53,7 +53,8 @@
 
 ######异步返回分析结果数据格式
 > 注: 下面的分析数据将会以POST方式push到接入方指定的接收接口。
-> 接收是设置header：Content-Type: application/json
+>
+> header设置：Content-Type: application/json
 
 ```json
 {
