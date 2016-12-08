@@ -3,7 +3,7 @@
 
 ##授权接口
 + [获取token方法一](#获取token方法一)
-+ [获取token方法二](#获取token方法二)
++ [获取token方法二](#获取token方法二) <code style="color: red;font-weight: bold;">已弃用</code>
 
 ##获取token方法一
 

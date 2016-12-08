@@ -1,4 +1,7 @@
 # 批改作文API资源
+
+<code style="color: red;font-weight: bold;">已弃用</code>
+
 ###作文
 分析结果: `http://api.pigai.org/essays/rapid_experience`
 
