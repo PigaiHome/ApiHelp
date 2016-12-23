@@ -16,10 +16,7 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 ####API访问频次
 
 ```
-
-单个用户  500次/小时
-
-一个用户通过一个应用 100次/小时
+一个用户通过一个应用 1200次/分钟
 ```
 
 ####API返回结果示例
@@ -50,3 +47,4 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | 10005 | invalid_request | 请求参数无效 |
 | 20002 | incorrect_response_parameter | 不正确的响应参数 |
 | 20003 | get_resource_failed | 获取资源失败 |
+| 20004 | access_frequency_restrict | API访问频次限制 |
