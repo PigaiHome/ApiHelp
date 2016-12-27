@@ -23,7 +23,7 @@
 | title | 必须，作文标题 |
 | comcontext | 必须，作文内容 |
 | solution | 选填(只支持post)，作文标准答案范文(用于跑题度检测)，string |
-| scope | 选填，资源访问控制，可为json,html_json,all_json，默认为all_json |
+| scope | 资源访问控制，固定值:all_json |
 | lang | 选填，`zh_cn`, `zh_tw`, `en` |
 
 ###资源scope
