@@ -25,6 +25,19 @@
 | solution | 选填(只支持post)，作文标准答案范文(用于跑题度检测)，string |
 | scope | 资源访问控制，固定值:all_json |
 | lang | 选填，`zh_cn`, `zh_tw`, `en` |
+| rid | 批改网作文号(高级版功能) |
+| config | 选填,自定义打分配置项(高级版功能) |
+
+>config 格式如下:
+
+```
+{
+    "word_cnt": { //字数限制
+        "low": 100,
+        "high": 200
+    }
+}
+```
 
 ###资源scope
 根据`appkey`的作用范围，开发者每次通过认证获取的access_token都有一个作用域`scope`,决定了该token能否从批改网的api获取正确的返回值。
