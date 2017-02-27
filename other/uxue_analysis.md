@@ -1,6 +1,9 @@
 # u学统计分析
+## 接口列表
++ [TOP10错误](#错误排行榜)
++ [根据指定qid和错误类型，获取句子和句评](#根据指定qid和错误类型，获取句子和句评)
 
-### 错误TOP10
+### 错误排行榜
 API: `http://api.pigai.org/analysis/uxue_top_error?qid=3834&access_token=xxx`
 
 ######请求参数(GET)
