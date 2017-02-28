@@ -29,7 +29,7 @@ $ curl http://api.pigai.org/oauth2/access_token \
     "access_token":"336342b797d895c2fafcfa547f751bfd326dc168",
     "expires_in":7200,
     "token_type":"Bearer",
-    "scope":null
+    "scope": "all_json"
 }
 ```
 |参数名称 | 参数说明 |
@@ -37,7 +37,7 @@ $ curl http://api.pigai.org/oauth2/access_token \
 | access_token | 临时token |
 | expires_in | 过期时间限制，默认为2个小时。 |
 | token_type | token 模式 Bearer  |
-| state | 带过来的state 防止crsf攻击 |
+| scope | 表示申请的授权范围, 默认返回`all_json` |
 ######失败
 ```json
 {
