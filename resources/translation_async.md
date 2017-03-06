@@ -21,6 +21,18 @@
 | access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
 | scope | 必须，资源访问控制，固定值:all_json |
 | ratio | 设置翻译对总分影响的比重,0-1之间 |
+| config | 选填,自定义打分配置项(高级版功能) |
+
+>config 格式如下:
+
+```
+{
+    "word_cnt": { //字数限制
+        "low": 20,
+        "high": 100
+    }
+}
+```
 
 ###资源scope
 根据`appkey`的作用范围，开发者每次通过认证获取的access_token都有一个作用域`scope`,决定了该token能否从批改网的api获取正确的返回值。
