@@ -160,3 +160,76 @@ API: `http://api.pigai.org/analysis/uxue_error?qid=3834&type=spell/punct&access_
 
 ## 错误说明
 ![](/asserts/err_cate.png)
+
+
+
+### 获取指定qid对应的各词性个数
+API: `http://api.pigai.org/analysis/uxue_word_sum?qid=3834&access_token==xxx`
+
+######请求参数(GET)
+
+| 参数名称 | 参数说明 |
+|---|---|
+| access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
+| qid | 必须，作文id |
+
+###返回结果
+######成功
+
+```json
+{
+	error: "success",
+	error_code: 0,
+	error_description: "success",
+	data: {
+		qid: 3834,
+		category: [
+			{
+				key: "n",
+				sum: 37592
+			},
+			{
+				key: "a",
+				sum: 24853
+			},
+			{
+				key: "p",
+				sum: 19053
+			},
+			{
+				key: "pu",
+				sum: 15412
+			},
+			{
+				key: "v",
+				sum: 15411
+			},
+			{
+				key: "d",
+				sum: 14440
+			},
+			{
+				key: "c",
+				sum: 5562
+			},
+			{
+				key: "r",
+				sum: 2165
+			},
+			{
+				key: "md",
+				sum: 1690
+			}
+		]
+	}
+}
+```
+######失败
+```json
+{
+    "error": "原因",
+    "error_code": 21329,
+    "error_description": "原因描述"
+}
+```
+
