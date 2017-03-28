@@ -2,6 +2,7 @@
 ## 接口列表
 + [TOP10错误](#错误排行榜)
 + [根据指定qid和错误类型，获取句子和句评](#根据指定qid和错误类型，获取句子和句评)
++ [获取指定qid对应的各词性个数](#获取指定qid对应的各词性个数)
 
 ### 错误排行榜
 API: `http://api.pigai.org/analysis/uxue_top_error?qid=3834&access_token=xxx`
@@ -232,4 +233,18 @@ API: `http://api.pigai.org/analysis/uxue_word_sum?qid=3834&access_token==xxx`
     "error_description": "原因描述"
 }
 ```
+
+
+######词性对应说明
+| 词性简称 | 词性 |
+|---|---|
+| n | 名词 |
+| a | 形容词 |
+| p | 介词 |
+| v | 动词 |
+| d | 副词 |
+| c | 连词 |
+| r | 代词 |
+| md | 情态动词 |
+| pu | 标点 |
 
