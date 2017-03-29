@@ -3,7 +3,8 @@
 + [TOP10错误](#错误排行榜)
 + [根据指定qid和错误类型，获取句子和句评](#根据指定qid和错误类型，获取句子和句评)
 + [获取指定qid对应的各词性个数](#获取指定qid对应的各词性个数)
-
++ [获取指定qid对应词性的top200个单词](获取指定qid对应词性的top200个单词)
++ [获取分数分布](#获取分数分布)
 ### 错误排行榜
 API: `http://api.pigai.org/analysis/uxue_top_error?qid=3834&access_token=xxx`
 
@@ -314,7 +315,7 @@ API: `http://api.pigai.org/analysis/uxue_word_top?qid=3834&cate=n&access_token==
 | pu | 标点 |
 
 
-### 获取指定qid对应词性的top200个单词
+### 获取分数分布
 API: `http://api.pigai.org/analysis/uxue_score_range?qid=3834&type=1&access_token==xxx`
 
 ######请求参数(GET)
