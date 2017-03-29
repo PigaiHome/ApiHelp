@@ -235,7 +235,7 @@ API: `http://api.pigai.org/analysis/uxue_word_sum?qid=3834&access_token==xxx`
 ```
 
 
-#####词性对应说明
+#####词性简称说明
 | 词性简称 | 词性 |
 |---|---|
 | n | 名词 |
@@ -247,4 +247,125 @@ API: `http://api.pigai.org/analysis/uxue_word_sum?qid=3834&access_token==xxx`
 | r | 代词 |
 | md | 情态动词 |
 | pu | 标点 |
+
+
+### 获取指定qid对应词性的top200个单词
+API: `http://api.pigai.org/analysis/uxue_word_top?qid=3834&cate=n&access_token==xxx`
+
+######请求参数(GET)
+
+| 参数名称 | 参数说明 |
+|---|---|
+| access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
+| qid | 必须，作文id |
+| cate | 必须，词性简称(见表-词性简称说明) |
+
+###返回结果
+######成功
+
+```json
+{
+	error: "success",
+	error_code: 0,
+	error_description: "success",
+	data: {
+		qid: 3834,
+		ret: [
+			{
+				key: "rice",
+				doc_count: 4923
+			},
+			{
+				key: "china",
+				doc_count: 4709
+			},
+			{
+				key: "people",
+				doc_count: 3282
+			},
+
+			...
+
+		]
+	}
+}
+```
+######失败
+```json
+{
+    "error": "原因",
+    "error_code": 21329,
+    "error_description": "原因描述"
+}
+```
+
+
+#####词性简称说明
+| 词性简称 | 词性 |
+|---|---|
+| n | 名词 |
+| a | 形容词 |
+| p | 介词 |
+| v | 动词 |
+| d | 副词 |
+| c | 连词 |
+| r | 代词 |
+| md | 情态动词 |
+| pu | 标点 |
+
+
+### 获取指定qid对应词性的top200个单词
+API: `http://api.pigai.org/analysis/uxue_score_range?qid=3834&type=1&access_token==xxx`
+
+######请求参数(GET)
+
+| 参数名称 | 参数说明 |
+|---|---|
+| access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
+| qid | 必须，作文id |
+| type | 必须，1：翻译；2：作文 |
+
+###返回结果
+######成功
+
+```json
+{
+	error: "success",
+	error_code: 0,
+	error_description: "success",
+	data: {
+		qid: 3834,
+		ret: [
+			{
+				range: "*-60.0",
+				count: 3140
+			},
+			{
+				range: "60.0-69.0",
+				count: 47
+			},
+			{
+				range: "70.0-79.0",
+				count: 15
+			},
+			{
+				range: "80.0-89.0",
+				count: 1
+			},
+			{
+				range: "90.0-100.0",
+				count: 0
+			}
+		]
+	}
+}
+```
+######失败
+```json
+{
+    "error": "原因",
+    "error_code": 21329,
+    "error_description": "原因描述"
+}
+```
 
