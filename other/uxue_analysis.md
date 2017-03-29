@@ -235,7 +235,7 @@ API: `http://api.pigai.org/analysis/uxue_word_sum?qid=3834&access_token==xxx`
 ```
 
 
-######词性对应说明
+#####词性对应说明
 | 词性简称 | 词性 |
 |---|---|
 | n | 名词 |
