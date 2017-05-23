@@ -71,56 +71,277 @@
 
 ```json
 {
-    "score": 40.5, // 总得分
-    "score_cat": {
+    "score": 79.5, //总得分
+    "score_cat": { //四个维度
         "1": {
             "name": "词汇",
-            "score": 0.442630385488
+            "score": 0.8426485
         },
         "2": {
             "name": "句子",
-            "score": 0.477608817276
+            "score": 0.74554825
         },
         "3": {
             "name": "篇章结构",
-            "score": 0.413793103448
+            "score": 0.7881277
         },
         "4": {
             "name": "内容相关",
-            "score": 0.3
+            "score": 0.7233994
         }
     },
-    "comment": "采用了简单的衔接手法，行文流畅；多多加强句法知识；文章用词太过单一，且单词拼写错误较多。",
-    "sentences": [ // 逐句分析
+    "comment": "采用了适当的衔接手法，层次清晰；句式变化多样，句法方面做的很棒；作者词汇基本功很好，高级词汇表达也比较恰当。", //总评
+    "sentences": [
         {
-            "sid": 0, // 第几句
+            "sid": 0, // 第几句, 从0开始
             "pid": 1, // 段落, 从1开始
-            "text": "English is a internationaly language which becomes importantly for modern world.",
+            "text": "Firstly, no accomplishment can be achieved in a transitory time, and success asks for continuous industrious work and efforts.",
             "comment": [
                 {
-                    "class": "error", // 分为四类: warn 警告，error 错误，error_trp 提示，great 好
-                    "cat": "拼写错误",
-                    "msg": "<b>internationaly</b> 疑似拼写错误"
+                    "class": "error_trp",
+                    // 四大类: warn 警告，error 错误，error_trp 提示，great 好
+                    "cat": "学习提示",
+                    "msg": "易混词汇: diligent, <b>industrious</b> 均表示“勤奋的”之意。",
+                    "kp": "industrious", //关键词
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 1,
+            "pid": 1,
+            "text": "One can taste the feeling of success only when he is more diligent than others.",
+            "comment": [
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>only</b> :&nbsp;<span class='suggest'>just/merely/barely/singly/solely/rarely</span>",
+                    "kp": "only",
+                    "rank": 0
                 },
                 {
-                    "class": "error",
-                    "cat": "冠词错误",
-                    "msg": "请检查<b>a internationaly</b>，疑似冠词错误。"
+                    "class": "error_trp",
+                    "cat": "学习提示",
+                    "msg": "易混词汇: <b>diligent</b>, industrious 均表示“勤奋的”之意。",
+                    "kp": "diligent",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 2,
+            "pid": 1,
+            "text": "It is not only an attempt to theory discussion, but also the need of practice.",
+            "comment": [
+                {
+                    "class": "error_trp",
+                    "cat": "学习提示",
+                    "msg": "易混词汇: drill, exercise, <b>practice</b>, training, discipline 都有“练习，训练，锻炼”之意。",
+                    "kp": "practice",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 3,
+            "pid": 1,
+            "text": "As the saying goes,\"Genius only means hard-working all one's life.\"",
+            "comment": [
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>hard-working</b> :&nbsp;<span class='suggest'>diligent/assidious/industrious</span>",
+                    "kp": "_sb hard-working/amod",
+                    "rank": 0
                 },
+                {
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "动名搭配 mean...life 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=mean life/von\"> 34</a> 次",
+                    "kp": "mean life/von",
+                    "rank": 0
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>only</b> :&nbsp;<span class='suggest'>just/merely/barely/singly/solely/rarely</span>",
+                    "kp": "only",
+                    "rank": 0
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>hard-working</b> :&nbsp;<span class='suggest'>assiduous</span>",
+                    "kp": "hard-working",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 4,
+            "pid": 1,
+            "text": "From my own perspective, firstly, efforts is more important, if you have not acquired the knowledge, your talent will not be used, but will be devoid of silence.",
+            "comment": [
+                {
+                    "class": "error",
+                    "cat": "句子错误",
+                    "msg": "请检查<b>is</b>，确认主谓一致。",
+                    "kp": "_nns _vbz/nv_agree",
+                    "rank": 100
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>if</b> :&nbsp;<span class='suggest'>provided that</span>",
+                    "kp": "if",
+                    "rank": 0
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "动名搭配 acquire...knowledge 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=acquire knowledge/von\"> 37</a> 次",
+                    "kp": "acquire knowledge/von",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 5,
+            "pid": 1,
+            "text": "To name only a few, Edison said,\"Success is 1% inspiration and perspiration\".",
+            "comment": [
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>only</b> :&nbsp;<span class='suggest'>just/merely/barely/singly/solely/rarely</span>",
+                    "kp": "only",
+                    "rank": 0
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "学习提示",
+                    "msg": "易混词汇: little, <b>few</b>, several 均含“少量的”之意。",
+                    "kp": "few",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 6,
+            "pid": 1,
+            "text": "It demonstrates the importance of hard-working.",
+            "comment": [
+                {
+                    "class": "warn",
+                    "cat": "语法警示",
+                    "msg": "确认<b>of hard-working</b>符合语法规范。",
+                    "kp": "_in _jj _.",
+                    "rank": 99
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "动名搭配 demonstrate...importance 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=demonstrate importance/von\"> 35</a> 次",
+                    "kp": "demonstrate importance/von",
+                    "rank": 0
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>hard-working</b> :&nbsp;<span class='suggest'>assiduous</span>",
+                    "kp": "hard-working",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 7,
+            "pid": 1,
+            "text": "Also be said that God rewards the dilligent.",
+            "comment": [
                 {
                     "class": "error",
                     "cat": "词语错误",
-                    "msg": "词性错误，建议将<b>becomes importantly</b>改为<b>becomes important</b>。"
+                    "msg": "请检查<b>dilligent</b>，确认拼写正确。",
+                    "kp": "dilligent",
+                    "rank": 100
+                }
+            ]
+        },
+        {
+            "sid": 8,
+            "pid": 1,
+            "text": "What's more, every single person is different and we all have kinds of unique talent.",
+            "comment": [
+                {
+                    "class": "great",
+                    "cat": "闪光短语",
+                    "msg": "<b>what's more</b>有助于提高文章衔接",
+                    "kp": "^ what 's more ,",
+                    "rank": 0
                 },
+                {
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "动名搭配 have...kind 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=have kind/von\"> 809</a> 次",
+                    "kp": "have kind/von",
+                    "rank": 0
+                },
+                {
+                    "class": "great",
+                    "cat": "闪光短语",
+                    "msg": "<b>what's more</b>意思是<b>另外，而且…</b>，是经典补充类词组。",
+                    "kp": "what 's more",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 9,
+            "pid": 1,
+            "text": "There is one more point, some will soar-but many more than previously will not find work to match their talents, qualifications or even quite modest ambitions for a job and a home.",
+            "comment": [
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>or</b> :&nbsp;<span class='suggest'>otherwise/if not/before/or else</span>",
+                    "kp": "or",
+                    "rank": 0
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "推荐表达",
+                    "msg": "<b>quite</b> :&nbsp;<span class='suggest'>fairly</span>",
+                    "kp": "quite",
+                    "rank": 0
+                },
+                {
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "动名搭配 match...talent 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=match talent/von\"> 17</a> 次",
+                    "kp": "match talent/von",
+                    "rank": 0
+                }
+            ]
+        },
+        {
+            "sid": 10,
+            "pid": 1,
+            "text": "Try to find the best way possible to convert your talent to something that gives service to people, Obviously, success always smiles upon people who are diligent.",
+            "comment": [
                 {
                     "class": "error",
-                    "cat": "介词错误",
-                    "msg": "介词误用，建议将<b>for modern world</b>改为<b>in modern world</b>。"
+                    "cat": "大小写错误",
+                    "msg": "请检查<b>Obviously</b>，疑似大小写错误",
+                    "kp": "Obviously/cap_err",
+                    "rank": 100
                 },
                 {
-                    "class": "warn",
-                    "cat": "其他",
-                    "msg": "<b>for modern world</b>疑似冠词缺失或<a target='_blank' href='http://wiki.pigai.org/index.php?doc-view-2'>可数名词单用</a>。"
+                    "class": "error_trp",
+                    "cat": "拓展辨析",
+                    "msg": "<b>people</b>表示“人，民族”。查看与<a href=\"http://bbs.pigai.org/forum.php?mod=viewthread&tid=12942&page=1&extra=#pid30263\" target=\"_blank\"><b>person</b></a>的区别。",
+                    "kp": "people",
+                    "rank": 0
                 }
             ]
         }
