@@ -75,7 +75,7 @@
     "score_cat": { //四个维度
         "1": {
             "name": "词汇",
-            "score": 0.8426485
+            "score": 0.8431347
         },
         "2": {
             "name": "句子",
@@ -151,14 +151,14 @@
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>hard-working</b> :&nbsp;<span class='suggest'>diligent/assidious/industrious</span>",
-                    "kp": "_sb hard-working/amod",
+                    "kp": "_sb hard-working",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 mean...life 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=mean life/von\"> 34</a> 次",
-                    "kp": "mean life/von",
+                    "kp": "mean life",
                     "rank": 0
                 },
                 {
@@ -186,7 +186,7 @@
                     "class": "error",
                     "cat": "句子错误",
                     "msg": "请检查<b>is</b>，确认主谓一致。",
-                    "kp": "_nns _vbz/nv_agree",
+                    "kp": "_nns _vbz",
                     "rank": 100
                 },
                 {
@@ -200,7 +200,7 @@
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 acquire...knowledge 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=acquire knowledge/von\"> 37</a> 次",
-                    "kp": "acquire knowledge/von",
+                    "kp": "acquire knowledge",
                     "rank": 0
                 }
             ]
@@ -242,7 +242,7 @@
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 demonstrate...importance 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=demonstrate importance/von\"> 35</a> 次",
-                    "kp": "demonstrate importance/von",
+                    "kp": "demonstrate importance",
                     "rank": 0
                 },
                 {
@@ -284,7 +284,7 @@
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 have...kind 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=have kind/von\"> 809</a> 次",
-                    "kp": "have kind/von",
+                    "kp": "have kind",
                     "rank": 0
                 },
                 {
@@ -319,7 +319,7 @@
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 match...talent 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=match talent/von\"> 17</a> 次",
-                    "kp": "match talent/von",
+                    "kp": "match talent",
                     "rank": 0
                 }
             ]
@@ -333,7 +333,7 @@
                     "class": "error",
                     "cat": "大小写错误",
                     "msg": "请检查<b>Obviously</b>，疑似大小写错误",
-                    "kp": "Obviously/cap_err",
+                    "kp": "Obviously",
                     "rank": 100
                 },
                 {
@@ -356,3 +356,4 @@
     "key": "PG2_emoapp_bb1f71d46d236eb3819a41c59eca920d"
 }
 ```
+
