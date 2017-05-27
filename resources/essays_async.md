@@ -75,7 +75,7 @@
     "score_cat": { //四个维度
         "1": {
             "name": "词汇",
-            "score": 0.8431347
+            "score": 0.8426485
         },
         "2": {
             "name": "句子",
@@ -101,8 +101,8 @@
                     "class": "error_trp",
                     // 四大类: warn 警告，error 错误，error_trp 提示，great 好
                     "cat": "学习提示",
-                    "msg": "易混词汇: diligent, <b>industrious</b> 均表示“勤奋的”之意。",
-                    "kp": "industrious", //关键词
+                    "msg": "易混词汇: <b>effort</b>, trouble, pains, endeavour, struggle 均表示“努力”之意。",
+                    "word_list": "efforts", //关键词
                     "rank": 0
                 }
             ]
@@ -116,14 +116,14 @@
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>only</b> :&nbsp;<span class='suggest'>just/merely/barely/singly/solely/rarely</span>",
-                    "kp": "only",
+                    "word_list": "only",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "学习提示",
                     "msg": "易混词汇: <b>diligent</b>, industrious 均表示“勤奋的”之意。",
-                    "kp": "diligent",
+                    "word_list": "diligent",
                     "rank": 0
                 }
             ]
@@ -137,7 +137,7 @@
                     "class": "error_trp",
                     "cat": "学习提示",
                     "msg": "易混词汇: drill, exercise, <b>practice</b>, training, discipline 都有“练习，训练，锻炼”之意。",
-                    "kp": "practice",
+                    "word_list": "practice",
                     "rank": 0
                 }
             ]
@@ -151,28 +151,28 @@
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>hard-working</b> :&nbsp;<span class='suggest'>diligent/assidious/industrious</span>",
-                    "kp": "_sb hard-working",
+                    "word_list": "hard-working",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 mean...life 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=mean life/von\"> 34</a> 次",
-                    "kp": "mean life",
+                    "word_list": "",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>only</b> :&nbsp;<span class='suggest'>just/merely/barely/singly/solely/rarely</span>",
-                    "kp": "only",
+                    "word_list": "only",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>hard-working</b> :&nbsp;<span class='suggest'>assiduous</span>",
-                    "kp": "hard-working",
+                    "word_list": "hard-working",
                     "rank": 0
                 }
             ]
@@ -186,21 +186,21 @@
                     "class": "error",
                     "cat": "句子错误",
                     "msg": "请检查<b>is</b>，确认主谓一致。",
-                    "kp": "_nns _vbz",
+                    "word_list": "is",
                     "rank": 100
                 },
                 {
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>if</b> :&nbsp;<span class='suggest'>provided that</span>",
-                    "kp": "if",
+                    "word_list": "if",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 acquire...knowledge 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=acquire knowledge/von\"> 37</a> 次",
-                    "kp": "acquire knowledge",
+                    "word_list": "",
                     "rank": 0
                 }
             ]
@@ -214,14 +214,14 @@
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>only</b> :&nbsp;<span class='suggest'>just/merely/barely/singly/solely/rarely</span>",
-                    "kp": "only",
+                    "word_list": "only",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "学习提示",
                     "msg": "易混词汇: little, <b>few</b>, several 均含“少量的”之意。",
-                    "kp": "few",
+                    "word_list": "few",
                     "rank": 0
                 }
             ]
@@ -235,21 +235,21 @@
                     "class": "warn",
                     "cat": "语法警示",
                     "msg": "确认<b>of hard-working</b>符合语法规范。",
-                    "kp": "_in _jj _.",
+                    "word_list": "of hard-working .",
                     "rank": 99
                 },
                 {
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 demonstrate...importance 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=demonstrate importance/von\"> 35</a> 次",
-                    "kp": "demonstrate importance",
+                    "word_list": "",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>hard-working</b> :&nbsp;<span class='suggest'>assiduous</span>",
-                    "kp": "hard-working",
+                    "word_list": "hard-working",
                     "rank": 0
                 }
             ]
@@ -263,7 +263,7 @@
                     "class": "error",
                     "cat": "词语错误",
                     "msg": "请检查<b>dilligent</b>，确认拼写正确。",
-                    "kp": "dilligent",
+                    "word_list": "dilligent",
                     "rank": 100
                 }
             ]
@@ -277,21 +277,21 @@
                     "class": "great",
                     "cat": "闪光短语",
                     "msg": "<b>what's more</b>有助于提高文章衔接",
-                    "kp": "^ what 's more ,",
+                    "word_list": "^ what 's more ,",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 have...kind 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=have kind/von\"> 809</a> 次",
-                    "kp": "have kind",
+                    "word_list": "",
                     "rank": 0
                 },
                 {
                     "class": "great",
                     "cat": "闪光短语",
                     "msg": "<b>what's more</b>意思是<b>另外，而且…</b>，是经典补充类词组。",
-                    "kp": "what 's more",
+                    "word_list": "what 's more",
                     "rank": 0
                 }
             ]
@@ -305,21 +305,21 @@
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>or</b> :&nbsp;<span class='suggest'>otherwise/if not/before/or else</span>",
-                    "kp": "or",
+                    "word_list": "or",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "推荐表达",
                     "msg": "<b>quite</b> :&nbsp;<span class='suggest'>fairly</span>",
-                    "kp": "quite",
+                    "word_list": "quite",
                     "rank": 0
                 },
                 {
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "动名搭配 match...talent 在语料库中出现过<a target=\"_blank\" href=\"http://www.pigai.org/corpus/snt/?q=match talent/von\"> 17</a> 次",
-                    "kp": "match talent",
+                    "word_list": "",
                     "rank": 0
                 }
             ]
@@ -333,14 +333,14 @@
                     "class": "error",
                     "cat": "大小写错误",
                     "msg": "请检查<b>Obviously</b>，疑似大小写错误",
-                    "kp": "Obviously",
+                    "word_list": "Obviously",
                     "rank": 100
                 },
                 {
                     "class": "error_trp",
                     "cat": "拓展辨析",
                     "msg": "<b>people</b>表示“人，民族”。查看与<a href=\"http://bbs.pigai.org/forum.php?mod=viewthread&tid=12942&page=1&extra=#pid30263\" target=\"_blank\"><b>person</b></a>的区别。",
-                    "kp": "people",
+                    "word_list": "people",
                     "rank": 0
                 }
             ]
