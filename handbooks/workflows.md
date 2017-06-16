@@ -1,14 +1,14 @@
 # 授权流程
-批改网的API使用OAuth2进行用户授权。
 
-##授权接口
-+ [获取token方法](#获取token方法)
+批改网的API使用OAuth2进行用户授权, 可以简单的分为两步:
 
-##获取token方法
++ [获取token](#获取token方法)
++ [获取资源](#获取资源)
 
-`适用场景：`服务器端获取token，如：php，java等
-
+## 获取token方法
 >http://api.pigai.org/oauth2/access_token
+
+通过服务器端获取token，如：php，python，java, nodejs等
 
 ######请求方式: POST
 ```bash
@@ -38,6 +38,9 @@ $ curl http://api.pigai.org/oauth2/access_token \
 | expires_in | 过期时间限制，默认为2个小时。 |
 | token_type | token 模式 Bearer  |
 | scope | 表示申请的授权范围, 默认返回`all_json` |
+
+`特别提示: 获取的access_token可以缓存起来重复使用, 从而较少请求次数，提升性能`
+
 ######失败
 ```json
 {
@@ -46,3 +49,7 @@ $ curl http://api.pigai.org/oauth2/access_token \
     "error_description": "原因描述"
 }
 ```
+
+## 获取资源
+
+正确获取token后, 就可以拿着token调用[api资源](http://api.pigai.org/apibook/resources/index.html)了
