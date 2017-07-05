@@ -50,5 +50,5 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | 20002 | incorrect_response_parameter | 不正确的响应参数 |
 | 20003 | get_resource_failed | 获取资源失败 |
 | 20004 | access_frequency_restrict | API访问频次限制 |
-| 20005 | account_expired | API访问频次限制 |
+| 20005 | account_expired | 账号已过期 |
 
