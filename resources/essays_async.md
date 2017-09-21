@@ -35,7 +35,11 @@
     "word_cnt": { //字数限制
         "low": 100,
         "high": 200
-    }
+    },
+    "index_words": [ //要点设置
+        "hi/hello",
+        "watch/see"
+    ]
 }
 ```
 
