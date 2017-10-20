@@ -52,4 +52,5 @@ API返回格式均为JSON，除非服务器或者网络故障，请求的HTTP st
 | 20004 | access_frequency_restrict | API访问频次限制 |
 | 20005 | account_expired | 账号已过期 |
 | 20006 | incorrect_request_parameter | 不正确的请求参数 |
+| 20007 | must_parameter_unique_id | unique_id为必填参数 |
 
