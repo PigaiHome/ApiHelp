@@ -22,11 +22,12 @@
 | access_token | 必须，这个token如何获取是通过[授权流程](../handbooks/workflows.html)得到这个token |
 | title | 必须，作文标题 |
 | comcontext | 必须，作文内容 |
+| scope | 必须, 资源访问控制，固定值:all_json |
 | solution | 选填(只支持post)，作文标准答案范文(用于跑题度检测)，string |
-| scope | 资源访问控制，固定值:all_json |
 | lang | 选填，`zh_cn`, `zh_tw`, `en` |
-| rid | 批改网作文号(高级版功能) |
+| rid | 选填，批改网作文号, 用于设置打分公式(高级版功能) |
 | config | 选填,自定义打分配置项(高级版功能) |
+| unique_id | `scope=storage_result`时必须(高级版功能) |
 
 >config 格式如下:
 
