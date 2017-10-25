@@ -80,7 +80,7 @@
     "error_code": 0,
     "error_description": "success",
     "data": {
-        "page_url": "http://api2.pigai.org/guest.html?key=demoa1%2Fe1962ef40db314ea8ea6875818267aa7.json",
+        "page_url": "http://api.pigai.org/guest.html?key=demoa1%2Fe1962ef40db314ea8ea6875818267aa7.json",
         "score": 31.5, //总得分
         "result": {
             "score": 31.5,
