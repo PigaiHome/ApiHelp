@@ -12,3 +12,4 @@
     * [翻译资源](resources/translation.md)
 * [定制开发](other/README.md)
     * [uxue](other/uxue_analysis.md)
+    * [hep](other/hep_analysis.md)
