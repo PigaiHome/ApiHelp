@@ -3,14 +3,14 @@
 `高教社` `天学网`
 
 ## 接口列表
-+ [提交分析](#api1)
-+ [取分析结果评](#api2)
++ [提交分析请求](#api1)
++ [取分析结果](#api2)
 
 ### 访问域名
 > http://api.pigai.org
 
 <div id="api1"></div>
-### API1：提交分析
+### API1：提交分析请求
 
 > POST /essays/rapid_experience_async  
 > GET &nbsp;&nbsp;&nbsp;/essays/rapid_experience_async
