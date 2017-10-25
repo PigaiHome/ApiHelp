@@ -1,19 +1,19 @@
 # 批改作文API资源
 
-###介绍
+### 介绍
 为了保证在大访问量高并发下，对外服务的稳定性，满足客户的业务需求，批改网增加作文分析异步接口。
 
 异步分析接口，在正常情况下，返回分析结果的速度很快，用户几乎感知不到和同步接口的区别; 当并发量比较大时，会采用排队机制，先将作文存入队列，然后交由分布式分析引擎进行处理, 分析完成后, 再主动通知接入的第三方(需要提供接收接口)。
 
-###作文分析(异步)
+### 作文分析(异步)
 异步分析: `http://api.pigai.org/essays/rapid_experience_async`
 
-######请求参数(POST/GET)
+###### 请求参数(POST/GET)
 
-######GET方式
+###### GET方式
 > curl 'http://api.pigai.org/essays/rapid_experience_async?title=english&comcontext=english&scope=all_json&access_token=Your_Access_Token'
 
-######POST方式
+###### POST方式
 > curl http://api.pigai.org/essays/rapid_experience_async -d 'title=english&comcontext=english&scope=all_json&access_token=Your_Access_Token'
 
 
@@ -44,10 +44,10 @@
 }
 ```
 
-###资源scope
+### 资源scope
 根据`appkey`的作用范围，开发者每次通过认证获取的access_token都有一个作用域`scope`,决定了该token能否从批改网的api获取正确的返回值。
 
-###返回结果
+### 返回结果
 ######成功
 
 ```json
@@ -60,7 +60,7 @@
     }
 }
 ```
-######失败
+###### 失败
 ```json
 {
     "error": "原因",
@@ -69,7 +69,7 @@
 }
 ```
 
-######异步返回分析结果数据格式
+###### 异步返回分析结果数据格式
 > 注: 下面的分析数据将会以POST方式push到接入方指定的接收接口。
 >
 > header设置：Content-Type: application/json
