@@ -8,8 +8,6 @@
 * [API资源](resources/README.md)
     * [作文分析(推荐)](resources/essays_async.md)
     * [翻译资源(异步)](resources/translation_async.md)
-    * [作文分析](resources/essays.md)
-    * [翻译资源](resources/translation.md)
 * [定制开发](other/README.md)
     * [uxue](other/uxue_analysis.md)
     * [hep](other/hep_analysis.md)
